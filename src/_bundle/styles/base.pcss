@@ -1,0 +1,58 @@
+/* Custom Base Styles Go Here. */
+[x-cloak] { display: none !important; }
+
+@font-face{font-family:"Futura-PT-Book";src:url("/assets/fonts/Futura-PT-Book.eot"), url("/assets/fonts/Futura-PT-Book.woff") format("woff"), url("/assets/fonts/Futura-PT-Book.ttf") format("truetype");}
+
+html {
+  font-size: 120%;
+}
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: $color-white;
+  color: $color-text-copy;
+  font-family: 'Futura-PT-Book', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#renderCanvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+#holder {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.loader {
+  border-top-color: #ff8900 !important;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
