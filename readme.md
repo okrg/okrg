@@ -1,3 +1,9 @@
+#### Wednesday 8:44pm - Nov 2, 2022
+
+I bulk trimmed the white space around images in a directory using this command:
+
+`find . -iname "*.jpg" -exec mogrify -trim {} \;`
+
 #### Wednesday 3:03pm - Oct 26, 2022
 
 After upgrading to MacOS Ventura, I discovered I was unable to sFTP into my Pantheon dev server.
